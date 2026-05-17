@@ -77,7 +77,7 @@ const STATS = [
 function LogoMark({ size = 40 }) {
   return (
     <img src={LOGO_B64} alt="Neuro Frequency"
-      style={{ width:size, height:size, objectFit:"cover", objectPosition:"center top", borderRadius:"50%", display:"block" }}
+      style={{ width:size, height:size, objectFit:"cover", objectPosition:"center", borderRadius:"50%", display:"block" }}
     />
   );
 }

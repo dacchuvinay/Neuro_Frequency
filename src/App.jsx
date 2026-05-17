@@ -145,7 +145,7 @@ export default function App() {
     style.id = "nf-styles";
     style.textContent = `
       html { scroll-behavior: smooth; }
-      body { background: #000; overflow-x: hidden; font-family: 'Syne', sans-serif; }
+      body { background: #000; overflow-x: hidden; font-family: 'Syne', sans-serif; margin: 0; padding: 0; }
       ::-webkit-scrollbar { width: 3px; }
       ::-webkit-scrollbar-track { background: #000; }
       ::-webkit-scrollbar-thumb { background: #1e1e1e; border-radius: 2px; }
@@ -274,7 +274,7 @@ export default function App() {
           loop
           muted
           playsInline
-          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", opacity:.2, pointerEvents:"none", transform:"scale(1.3)" }}
+          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", opacity:.2, pointerEvents:"none", transform:"scale(1.6)" }}
         >
           <source src={`${import.meta.env.BASE_URL}hero-bg.mp4`} type="video/mp4" />
         </video>

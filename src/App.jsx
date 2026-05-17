@@ -269,7 +269,15 @@ export default function App() {
 
       {/* ═══ HERO ═══ */}
       <section id="home" style={{ position:"relative", height:"100vh", minHeight:620, display:"flex", alignItems:"center", justifyContent:"center", overflow:"hidden" }}>
-        <NeuralCanvas/>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", opacity:.4, pointerEvents:"none" }}
+        >
+          <source src={`${import.meta.env.BASE_URL}hero-bg.mp4`} type="video/mp4" />
+        </video>
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse 72% 60% at 50% 50%,rgba(255,255,255,.04) 0%,transparent 70%)", pointerEvents:"none" }}/>
         <div style={{ position:"absolute", bottom:0, left:0, right:0, height:240, background:"linear-gradient(to top,#000,transparent)", pointerEvents:"none" }}/>
 

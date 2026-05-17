@@ -274,7 +274,7 @@ export default function App() {
           loop
           muted
           playsInline
-          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", opacity:.4, pointerEvents:"none" }}
+          style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", opacity:.2, pointerEvents:"none", transform:"scale(1.3)" }}
         >
           <source src={`${import.meta.env.BASE_URL}hero-bg.mp4`} type="video/mp4" />
         </video>

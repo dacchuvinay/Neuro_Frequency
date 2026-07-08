@@ -103,15 +103,6 @@ const fadeUp = {
   animate: { opacity: 1, y: 0 },
 };
 
-const letterBlock = {
-  initial: { y: 120, opacity: 0 },
-  animate: { 
-    y: 0, 
-    opacity: 1, 
-    transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] } 
-  }
-};
-
 function SandTransitionImage({ src, alt, className }: { src: string; alt: string; className?: string }) {
   const [isPresent, safeToRemove] = usePresence();
   const filterId = useRef(`sand-${Math.random().toString(36).substr(2, 9)}`).current;

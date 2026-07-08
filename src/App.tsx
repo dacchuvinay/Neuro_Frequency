@@ -6,7 +6,7 @@ const chaptersData = [
   { 
     id: "optic-cables",
     name: "Optic cables", 
-    image: "/optic_cables.png",
+    image: "./optic_cables.png",
     icon: Network,
     title: "Optic Cables & Low-Latency Infrastructure",
     subtitle: "How we leverage cutting-edge hardware for microsecond execution.",
@@ -16,7 +16,7 @@ const chaptersData = [
   { 
     id: "nse-bse",
     name: "about NSE and BSE", 
-    image: "/nse_bse.png",
+    image: "./nse_bse.png",
     icon: TrendingUp,
     title: "Trading the NSE & BSE Markets",
     subtitle: "Capitalizing on the growth and liquidity of India's premier exchanges.",
@@ -26,7 +26,7 @@ const chaptersData = [
   { 
     id: "bonds",
     name: "Bonds market", 
-    image: "/bonds.jpg",
+    image: "./bonds.jpg",
     icon: Briefcase,
     title: "Bonds & Fixed-Income Arbitrage",
     subtitle: "Deploying systematic models in debt and sovereign securities.",
@@ -36,7 +36,7 @@ const chaptersData = [
   { 
     id: "about-me",
     name: "about me", 
-    image: "/about_me.png",
+    image: "./about_me.png",
     icon: User,
     title: "About Me & Neuro Frequency Labs",
     subtitle: "The vision, the discipline, and the journey toward consistent alpha.",
@@ -303,7 +303,7 @@ export default function App() {
               {/* Left Column - Firm Graphic */}
               <div className="w-full lg:w-[45%] relative aspect-square max-w-[450px] bg-black rounded-2xl overflow-hidden border border-gray-800">
                 <img 
-                  src="/stock_market_graph.png" 
+                  src="./stock_market_graph.png" 
                   alt="Neuro Frequency Trading Graph"
                   className="w-full h-full object-contain grayscale opacity-90 scale-105"
                 />
@@ -363,7 +363,7 @@ export default function App() {
             muted 
             playsInline 
             className="w-full h-full object-cover"
-            src="/hero-bg.mp4"
+            src="./hero-bg.mp4"
           />
         </div>
 
@@ -564,7 +564,7 @@ export default function App() {
           whileInView={{ y: "-65%", opacity: 0.8 }}
           viewport={{ margin: "100px" }}
           transition={{ duration: 1.4, ease: "easeOut" }}
-          src="/logo.png" 
+          src="./logo.png" 
           alt="Neuro Frequency Logo" 
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[120vw] md:w-[800px] pointer-events-none z-0 object-contain drop-shadow-[0_0_50px_rgba(255,255,255,0.2)]"
         />
